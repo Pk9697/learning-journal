@@ -121,6 +121,7 @@ nav .container{
 header{
     background: #0000004F url(./images/article-image-hero.png);
     background-size: cover;
+    background-position: top;
     color: #FFFFFF;
     padding: 1.5em 0;
 }
@@ -129,7 +130,7 @@ header .container{
     display: flex;
     flex-direction: column;
     justify-content: end;
-    min-height: 40vh;
+    min-height: 35vh;
     /* margin-right: auto;
     margin-left: 0; */
     /* padding-left: 2em; */
@@ -201,5 +202,9 @@ main .container{
 
     .btn-view{
         grid-column: 2;
+    }
+
+    header .container{
+        min-height: 60vh;
     }
 }
