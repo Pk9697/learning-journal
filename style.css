@@ -130,7 +130,10 @@ header .container{
     flex-direction: column;
     justify-content: end;
     min-height: 40vh;
-
+    max-width: 768px;
+    /* margin-right: auto;
+    margin-left: 0; */
+    /* padding-left: 2em; */
 }
 
 header p{
@@ -182,4 +185,20 @@ footer .container{
 .footer-header,.copyright{
     margin: 0;
     margin-top: 0.2em;
+}
+
+main .container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width:768px) {
+    main .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+    }
+
+    .btn-view{
+        grid-column: 2;
+    }
 }
