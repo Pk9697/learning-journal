@@ -5,50 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My learning journal</title>
+    <!-- Google font sans pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
     <nav>
-        <img src="./images/logo.png" alt="logo">
-        <h3>My learning journal</h3>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>                       
-        </ul>
+        <div class="container">
+            <img src="./images/logo.png" alt="logo">
+            <h3>My learning journal</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About me</a></li>                       
+            </ul>
+        </div>
     </nav>
 
     <header>
-        <p>NOV 14,2022</p>
-        <h1>My new jouney as a bootcamp student</h1>
-        <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+        <div class="container">
+            <p class="date-header">NOV 14,2022</p>
+            <h1>My new journey as a bootcamp student</h1>
+            <p>After several months of learning in the Frontend Developer Career Path, 
+            I've made the big jump over to the Bootcamp to get expert code reviews 
+            of my Solo Projects projects and meet like-minded peers.</p>
+        </div>
     </header>
     
     <main>
-        <div class="card">
-            <img src="./images/article-image-01.png" alt="image1">
-            <p>NOV 14,2022</p>
-            <h2>Blog one</h2>
-            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-        </div>
-        <div class="card">
-            <img src="./images/article-image-02.png" alt="image2">
-            <p>NOV 14,2022</p>
-            <h2>Blog two</h2>
-            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-        </div>
-        <div class="card">
-            <img src="./images/article-image-03.png" alt="image3">
-            <p>NOV 14,2022</p>
-            <h2>Blog three</h2>
-            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
-        </div>
+        <div class="container">
 
-        <button>View More</button>
+            <div class="card">
+                <img src="./images/article-image-01.png" alt="image1">
+                <p class="date-main">NOV 14,2022</p>
+                <h2>Blog one</h2>
+                <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </div>
+            <div class="card">
+                <img src="./images/article-image-02.png" alt="image2">
+                <p class="date-main">NOV 14,2022</p>
+                <h2>Blog two</h2>
+                <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </div>
+            <div class="card">
+                <img src="./images/article-image-03.png" alt="image3">
+                <p class="date-main">NOV 14,2022</p>
+                <h2>Blog three</h2>
+                <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+            </div>
+    
+            <button>View More</button>
+        </div>
     </main>
 
     <footer>
-        <h4>My learning journal</h4>
-        <p>Copyright @2022</p>
+        <div class="container">
+            <h4>My learning journal</h4>
+            <p class="copyright">Copyright @2022</p>
+        </div>
     </footer>
 
 </body>
