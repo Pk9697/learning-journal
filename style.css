@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -16,7 +20,7 @@ h3{
     /* 15px */
     letter-spacing: -0.03em;
     color: #0E0E0E;
-
+    margin: 0;
 }
 
 a{
@@ -27,15 +31,21 @@ a{
 
 .date-header{
     font-size: 0.75rem;
+    margin: 0;
+    font-weight: 400;
+    /* color: grey; */
+    color:rgb(227 219 219);
 }
 
 h1{
     font-size: 2rem;
     font-weight: 700;
+    margin: 0;
 }
 
 .date-main{
     font-size: 0.875rem;
+    font-weight: 400;
 }
 
 h2{
@@ -62,3 +72,114 @@ h4{
     font-weight: 400;
 }
 
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*********
+Layout
+**********/
+
+.container{
+    /* background-color: magenta; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    min-height: 7vh;
+}
+.logo{
+    width: 24px;
+    height: 24px;
+}
+
+.nav-header{
+    margin-left: 0.1em;
+}
+
+.ul-links{
+    margin-left: auto;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.ul-links li{
+    margin-left: 1.5em;
+}
+
+.ul-links a{
+    text-decoration: none;
+}
+
+
+header{
+    background: #0000004F url(./images/article-image-hero.png);
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 1.5em 0;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-height: 40vh;
+
+}
+
+header p{
+    margin: 0;
+    color:rgb(227 219 219);
+}
+
+header .container > *{
+    margin-top: 0.5rem;
+}
+
+.card{
+    margin-top: 2.5em;
+}
+
+.card > *:not(img){
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.card img{
+    border-radius: 3px;
+}
+
+.btn-view{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.5em;
+    border: none;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    text-decoration-line: underline;
+}
+
+footer{
+    margin-top: 2.5em;
+    background: #202020;
+    color: #FFFFFF;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+}
+
+.footer-header,.copyright{
+    margin: 0;
+    margin-top: 0.2em;
+}
