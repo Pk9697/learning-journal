@@ -7,6 +7,7 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1rem;
     line-height: 1.25;
+    min-width: 330px;
 }
 
 /*********
@@ -134,14 +135,23 @@ header{
     background-size: cover;
     background-position: top;
     color: #FFFFFF;
-    padding-bottom: 1.5em;
-    padding-top: 8em;
+    /* min-width: 330px;
+    min-height: 330px; */
+    /* padding-bottom: 1.5em; */
+    /* padding-top: 8em; */
 }
 
 header .container{
+    /* min-width: 330px; */
+    min-height: 250px;
+    height: 70vw;
+    max-height: 488px;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    cursor: pointer;
+    padding-bottom: 1.5em;
+
     /* min-height: 35vh; */
     /* margin-right: auto;
     margin-left: 0; */
@@ -158,6 +168,42 @@ header p{
 header .container > *{
     margin-top: 0.5rem;
 }
+
+/****************** 
+Designing article page 
+*******************/
+.grid-container{
+    color: #151515;
+    margin-top: 2em;
+}
+
+.grid-color{
+    color: #151515;
+}
+
+.grid-h1{
+    margin: 0.5em 0;
+}
+
+.grid-img{
+
+    padding: 6em 0;
+    background: url(./images/article-image-hero.png);
+    background-size: cover;
+    background-position: top;
+    margin: 2.2em 0;
+    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+
+
+
+
+
+
+
+
+/* Card */
 
 .card{
     margin-top: 2.5em;
@@ -235,7 +281,10 @@ main .container{
     h1{
         font-size: 2.5rem;
     }
-
+/*********
+ Layout
+**********/
+    
     .card h2{
         margin-top: 0.5833em;
     }
@@ -251,9 +300,12 @@ main .container{
         line-height: 1.285;
     }
 
-    header{
+    /* header{
         padding-bottom: 3.75em;
         padding-top: 17.5em;
+    } */
+    header .container{
+        padding-bottom: 3.75em;
     }
 
     nav .container{
