@@ -98,6 +98,9 @@ Layout
     top: 0;
     left: 0;
 } */
+nav{
+    box-shadow:0px 0px 1px rgb(185, 183, 183);
+}
 
 nav .container{
     display: flex;
@@ -187,12 +190,22 @@ Designing article page
 
 .grid-img{
 
-    padding: 6em 0;
+    /* padding: 6em 0; */
+    /* min-height: 190px; */
+    height: 45vw;
+    max-height: 488px;
     background: url(./images/article-image-hero.png);
     background-size: cover;
     background-position: top;
     margin: 2.2em 0;
     /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+}
+
+.grid-recent{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 1.5em 0;
+    margin-top: 3em;
 }
 
 
@@ -201,11 +214,12 @@ Designing article page
 
 
 
-
-
 /* Card */
+/* main{
+    margin-top: 3em;
+} */
 
-.card{
+.card:not(.card:first-child){
     margin-top: 2.5em;
 }
 
@@ -315,4 +329,27 @@ main .container{
     .logo{
         width: 34px;
     }
+
+    .card:first-child{
+        margin-top: 2.5em;
+    }
+    .grid-recent{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 4em 1fr 4em;
+    }
+
+    .grid-mid{
+        grid-column: 2;
+    }
+
+    .grid-full{
+        grid-column: 1/-1;
+    }
+
 }
