@@ -99,6 +99,7 @@ nav{
     left: 0;
     background-color: #FFFFFF;
     width: 100%;
+    /* min-height: 60px; */
 }
 
 nav{
@@ -106,13 +107,18 @@ nav{
 }
 
 nav .container{
+    min-height: 60px;
     display: flex;
     align-items: center;
     /* min-height: 7vh; */
     padding: 0.25em 0;
 }
-.logo{
+.logo,.ham{
     width: 24px;
+}
+.ham{
+    margin-left: auto;
+    cursor: pointer;
 }
 
 .nav-header{
@@ -120,15 +126,30 @@ nav .container{
 }
 
 .ul-links{
-    margin-left: auto;
+    background-color: #FFFFFF;
+    position: fixed;
+    top:60px;
+    right: 0px;
+    /* margin-left: auto; */
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     padding: 0;
     text-transform: uppercase;
+    margin: 0;
+    justify-content: center;
+    gap: 5px;
+    box-shadow:0px 0px 1px rgb(185, 183, 183);
+    display: none;
+}
+
+.displayMenu{
+    display: block;
 }
 
 .ul-links li{
-    margin-left: 1.5em;
+    /* margin-left: 1.5em; */
+    padding: 0 1em;
 }
 
 .ul-links a{
@@ -181,7 +202,7 @@ Designing article page
 *******************/
 .grid-container{
     color: #151515;
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .grid-color{
@@ -216,7 +237,7 @@ Designing article page
 Designing about me page 
 *******************/
 .grid-about-container{
-    margin-top: 1.5em;
+    margin-top: 5em;
     display: grid;
     grid-template-columns: 1fr;
     /* gap: 1em; */
@@ -359,9 +380,28 @@ main .container{
         padding-bottom: 3.75em;
     }
 
+
     nav .container{
-        padding: 1em 0;
+        padding: 1.55em 0;
     }
+
+    .ul-links{
+        position: static;
+        /* top:60px;
+        right: 0px; */
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        box-shadow: none;
+    }
+    .ul-links li{
+        margin-left: 1.5em;
+        padding: 0;
+    }
+    .ham{
+        display: none;
+    }
+
 
     .logo{
         width: 34px;
@@ -377,6 +417,7 @@ main .container{
 
 
     .grid-container{
+        margin-top: 9em;
         display: grid;
         grid-template-columns: 4em 1fr 4em;
     }
@@ -394,7 +435,7 @@ Designing about me page
 *******************/
 
     .grid-about-container{
-        margin-top: 5em;
+        margin-top: 9em;
         /* display: grid; */
         grid-template-columns: 4em 1fr 4fr 4em;
         /* gap: 1em; */

@@ -28,3 +28,8 @@ document.getElementById('btn-view').addEventListener('click',function(e){
 
     document.getElementById('btn-view').style.display='none'
 })
+
+
+document.getElementById('ham').addEventListener('click',function(){
+    document.getElementById('ul-links').classList.toggle('displayMenu')
+})
