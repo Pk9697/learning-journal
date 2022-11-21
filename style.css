@@ -93,11 +93,14 @@ Layout
     margin: 0 auto;
 }
 
-/* nav{
+nav{
     position: fixed;
     top: 0;
     left: 0;
-} */
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
 nav{
     box-shadow:0px 0px 1px rgb(185, 183, 183);
 }
@@ -142,6 +145,7 @@ header{
     min-height: 330px; */
     /* padding-bottom: 1.5em; */
     /* padding-top: 8em; */
+    margin-top: 3.75em;
 }
 
 header .container{
@@ -348,10 +352,9 @@ main .container{
         /* margin: 0 auto; */
     }
 
-    /* header{
-        padding-bottom: 3.75em;
-        padding-top: 17.5em;
-    } */
+    header{
+        margin-top: 5.25em;
+    }
     header .container{
         padding-bottom: 3.75em;
     }
